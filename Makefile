@@ -7,8 +7,11 @@
 # anything else that needs to happen before your server is started
 # for the first time
 setup:
+	touch  url-app/database/database.sqlite
 	composer install -d  url-app/
 	npm install --prefix url-app/
+	php url-app/artisan migrate
+
 # `make server` will be used after `make setup` in order to start
 # an http server process that listens on any unreserved port
 #	of your choice (e.g. 8080). 
