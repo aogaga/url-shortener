@@ -7,6 +7,7 @@
 # anything else that needs to happen before your server is started
 # for the first time
 setup:
+	composer install -d  url-app/
 	npm install --prefix url-app/
 # `make server` will be used after `make setup` in order to start
 # an http server process that listens on any unreserved port
