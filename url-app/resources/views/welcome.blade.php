@@ -25,7 +25,7 @@
             <div class="grid-x grid-margin-x">
                 <div class="cell auto"></div>
                 <div class="cell small-8">
-                    <h2 id="response-message"></h2>
+                    <a id="response-message"></a>
                 </div>
                 <div class="cell auto"></div>
             </div>

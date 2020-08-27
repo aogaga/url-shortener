@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Domain\Repository\Contracts\UrlRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class GeneralServiceProvider extends ServiceProvider
@@ -20,8 +19,7 @@ class GeneralServiceProvider extends ServiceProvider
 
 
         $this->app->bind('App\Domain\Service\Infrastructure\UrlServiceInterface',
-        'App\Domain\Service\UrlService');
-
+            'App\Domain\Service\UrlService');
 
     }
 

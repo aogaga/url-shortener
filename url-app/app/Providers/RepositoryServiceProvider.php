@@ -13,7 +13,6 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
         $this->app->bind(
             'App\Domain\Repository\Contracts\UrlRepositoryInterface',
             'App\Domain\Repository\UrlRepository'
@@ -24,7 +23,6 @@ class RepositoryServiceProvider extends ServiceProvider
             'App\Domain\Repository\Contracts\RepositoryInterface',
             'App\Domain\Repository\UrlvisitRepository'
         );
-
     }
 
     /**
