@@ -1,5 +1,6 @@
 .PHONY: $(MAKECMDGOALS)
 
+
 # `make setup` will be used after cloning or downloading to fulfill
 # dependencies, and setup the the project in an initial state.
 # This is where you might download rubygems, node_modules, packages,
@@ -7,6 +8,9 @@
 # anything else that needs to happen before your server is started
 # for the first time
 setup:
+	echo "PHP and Composer should be installed before running make setup"
+	 
+
 	touch  url-app/database/database.sqlite
 	composer install -d  url-app/
 	npm install --prefix url-app/
